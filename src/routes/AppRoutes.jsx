@@ -1,5 +1,5 @@
-import { Routes, Route } from "react-router-Dom"
-import JobsPage from
+import { Routes, Route } from "react-router-dom";
+import JobsPage from "../pages/JobsPage";
 
 
 function AppRoutes() {
