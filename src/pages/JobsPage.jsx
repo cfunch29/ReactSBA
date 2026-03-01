@@ -8,8 +8,6 @@ function JobsPage() {
 
     useEffect(() => {
         const getJobs = async () => {
-            dispatch({ type: "FETCH_START" })
-
             try {
                 const data = await fetchJobs()
                 dispatch({ type: "FETCH_SUCCESS", payload: data })
