@@ -4,7 +4,9 @@
 - React 
 - JS 
 - CSS 
-- AJAX: API Integration 
+- Vite 
 - At least 2 react hooks: 
+    - useReducer
+    
 
 ## Reflection 
