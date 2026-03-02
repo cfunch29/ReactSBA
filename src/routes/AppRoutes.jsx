@@ -1,5 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import JobsPage from "../pages/JobsPage";
+import JobDetailsPage from "../pages/JobDetailsPage";
+import DashboardPage from "../pages/DashboardPage";
 
 
 function AppRoutes() {
