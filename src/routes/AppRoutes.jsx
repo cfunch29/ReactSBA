@@ -7,9 +7,12 @@ import DashboardPage from "../pages/DashboardPage";
 function AppRoutes() {
     return (
         <Routes>
+            {/* Main Page */}
             <Route path="/" element={<JobsPage />} />
-            <Route path="/job/:id" element={<JobDetailsPage />} />
+            {/* Dashboard */}
             <Route path="/dashboard" element={<DashboardPage />} />
+            {/* job details */}
+            <Route path="/job/:id" element={<JobDetailsPage />} />
         </Routes>
     )
 }
