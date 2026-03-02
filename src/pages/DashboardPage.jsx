@@ -7,7 +7,7 @@ function DashboardPage() {
     const { state, dispatch } = useContext(JobContext)
 
     const handleChangeStatus = (job, status) => {
-        dispatch({ type: "UPDATE_STATUS", payload: { job, status }
+        dispatch({ type: "UPDATE_STATUS", payload: { id: job.id, status }
         })
     }
 

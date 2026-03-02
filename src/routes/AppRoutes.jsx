@@ -12,7 +12,7 @@ function AppRoutes() {
             {/* Dashboard */}
             <Route path="/dashboard" element={<DashboardPage />} />
             {/* job details */}
-            <Route path="/job/:id" element={<JobDetailsPage />} />
+            <Route path="/jobs/:jobId" element={<JobDetailsPage />} />
         </Routes>
     )
 }
