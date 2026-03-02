@@ -25,3 +25,8 @@ Routes
 API: [Remotive](https://remotive.com/remote-jobs/api)
 
 ## Reflection 
+What could you have done differently during the planning stages of your project to make the execution easier?
+- In the future I would focus on one page/route at a time. I would have started with just connecting the API first to see the job cards. Then move into the additional pages. 
+
+What would you add to or change about your application if given more time?
+I would add more error handling and more visually appealing styling including loading features. I would add a search filter and maybe a category filter. I would also utilize localStorage in some capacity. 
