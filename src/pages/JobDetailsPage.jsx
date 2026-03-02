@@ -35,7 +35,7 @@ function JobDetailsPage() {
             >
             {state.savedJobs.some((jobMatch) => jobMatch.id === job.id) 
             ? "Saved" : "Save Job"}
-            Save Job</button>
+            </button>
         </div>
         </div>
         </div>
