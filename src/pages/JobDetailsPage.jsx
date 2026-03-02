@@ -25,7 +25,10 @@ function JobDetailsPage() {
             
             <div className="description">
                 <h3>Job Description</h3>
-                <p>{job.description}</p>
+                {/* render the HTML to actual html since API sends descriptions as full HTML markup */}
+                <div className="job-description"
+                dangerouslySetInnerHTML={{ __html: job.description }}/>
+                {/* <p>{job.description}</p> */}
                 </div>
 
             <button 
