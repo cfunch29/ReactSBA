@@ -17,12 +17,27 @@ function JobDetailsPage() {
 
     return (
         <div>
+            <div className="job-details">
+                <div className="job-card">
             <h1>{job.title}</h1>
             <h2>{job.company_name}</h2>
-            <p>Location: {job.candidate_required_location}</p>
-            <p>{job.description}</p>
+            <p className="location">Location: {job.candidate_required_location}</p>
+            
+            <div className="description">
+                <h3>Job Description</h3>
+                <p>{job.description}</p>
+                </div>
 
-            <button onClick={handleSave}>Save Job</button>
+            <button 
+            onClick={handleSave}
+            disabled={state.savedJobs.some((jobMatch) => jobMatch.id === job.id)}
+            className="save-btn"
+            >
+            {state.savedJobs.some((jobMatch) => jobMatch.id === job.id) 
+            ? "Saved" : "Save Job"}
+            Save Job</button>
+        </div>
+        </div>
         </div>
     )
 }
